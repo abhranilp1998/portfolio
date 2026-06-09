@@ -1914,3 +1914,212 @@ textarea.form-input::-webkit-resizer { display: none; }
   color: var(--orange-yellow-crayola);
   box-shadow: 0 0 10px rgba(255, 219, 112, 0.15);
 }
+
+
+
+/*-----------------------------------*\
+  #MAP LOCK & UNLOCK POPUP
+\*-----------------------------------*/
+
+.mapbox {
+  position: relative;
+}
+
+.mapbox iframe {
+  transition: filter var(--transition-1) ease;
+}
+
+.mapbox:not(.unlocked) iframe {
+  filter: grayscale(1) invert(1) blur(8px);
+}
+
+.mapbox-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(18, 18, 20, 0.85);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  z-index: 5;
+  transition: opacity 0.4s ease, visibility 0.4s ease;
+  padding: 20px;
+  text-align: center;
+}
+
+.mapbox-overlay.hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.mapbox-overlay-icon {
+  font-size: 38px;
+  color: var(--orange-yellow-crayola);
+  animation: pulseLock 2.5s infinite ease-in-out;
+}
+
+@keyframes pulseLock {
+  0%, 100% { transform: scale(1); opacity: 0.9; }
+  50% { transform: scale(1.08); opacity: 1; color: var(--vegas-gold); }
+}
+
+.mapbox-overlay-title {
+  color: var(--white-1);
+  font-family: var(--ff-heading);
+  font-size: var(--fs-4);
+  font-weight: var(--fw-600);
+}
+
+.mapbox-overlay-text {
+  color: var(--light-gray-70);
+  font-size: var(--fs-7);
+  max-width: 290px;
+  line-height: 1.4;
+  margin-bottom: 4px;
+}
+
+.mapbox-overlay-btn {
+  background: var(--border-gradient-onyx);
+  color: var(--orange-yellow-crayola);
+  border: 1px solid var(--jet);
+  border-radius: 10px;
+  padding: 8px 18px;
+  font-size: var(--fs-7);
+  font-weight: var(--fw-500);
+  font-family: var(--ff-sans);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  box-shadow: var(--shadow-2);
+  transition: var(--transition-1);
+  position: relative;
+  z-index: 1;
+}
+
+.mapbox-overlay-btn::before {
+  content: "";
+  position: absolute;
+  inset: 1px;
+  background: var(--bg-gradient-jet);
+  border-radius: inherit;
+  z-index: -1;
+  transition: var(--transition-1);
+}
+
+.mapbox-overlay-btn:hover {
+  background: var(--bg-gradient-yellow-1);
+  transform: translateY(-1px);
+}
+
+.mapbox-overlay-btn:hover::before {
+  background: var(--bg-gradient-yellow-2);
+}
+
+.map-unlock-modal {
+  max-width: 450px;
+  width: 100%;
+}
+
+.map-unlock-modal .modal-title {
+  font-family: var(--ff-heading);
+  color: var(--white-1);
+  margin-bottom: 6px;
+}
+
+.map-unlock-modal .modal-subtitle {
+  font-size: var(--fs-6);
+  color: var(--light-gray-70);
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.map-unlock-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.map-unlock-form .form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  text-align: left;
+}
+
+.map-unlock-form .form-label {
+  color: var(--light-gray);
+  font-size: var(--fs-7);
+  font-weight: var(--fw-500);
+  font-family: var(--ff-sans);
+}
+
+.map-unlock-form .form-input {
+  width: 100%;
+  background: transparent;
+  border: 1px solid var(--jet);
+  color: var(--white-2);
+  padding: 11px 15px;
+  border-radius: 10px;
+  font-size: var(--fs-6);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.map-unlock-form .form-input:focus {
+  border-color: var(--orange-yellow-crayola);
+  outline: none;
+  box-shadow: 0 0 8px rgba(255, 219, 112, 0.15);
+}
+
+.map-unlock-form .form-input.invalid {
+  border-color: var(--bittersweet-shimmer);
+  box-shadow: 0 0 8px rgba(220, 53, 69, 0.15);
+  animation: shakeInput 0.2s ease-in-out 2;
+}
+
+@keyframes shakeInput {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-4px); }
+  75% { transform: translateX(4px); }
+}
+
+.map-unlock-form .error-message {
+  display: none;
+  color: var(--bittersweet-shimmer);
+  font-size: var(--fs-8);
+  font-family: var(--ff-sans);
+  margin-top: 1px;
+}
+
+.map-unlock-form .error-message.visible {
+  display: block;
+}
+
+.map-unlock-form .form-alert {
+  display: none;
+  background: rgba(220, 53, 69, 0.1);
+  border: 1px solid rgba(220, 53, 69, 0.25);
+  color: #ff6b6b;
+  font-size: var(--fs-7);
+  padding: 10px 12px;
+  border-radius: 8px;
+  text-align: center;
+  font-family: var(--ff-sans);
+  line-height: 1.4;
+}
+
+.map-unlock-form .form-alert.visible {
+  display: block;
+}
+
+.map-unlock-form .form-btn {
+  margin-top: 5px;
+  cursor: pointer;
+}
