@@ -136,24 +136,38 @@ for (let i = 0; i < formInputs.length; i++) {
 
 
 
-// page navigation variables
+// page navigation variables & hash-based routing
 const navigationLinks = document.querySelectorAll("[data-nav-link]");
 const pages = document.querySelectorAll("[data-page]");
 
-// add event to all nav link
-for (let i = 0; i < navigationLinks.length; i++) {
-  navigationLinks[i].addEventListener("click", function () {
+const navigateToTab = () => {
+  const hash = window.location.hash || '#about';
+  const activePageName = hash.replace('#', '').toLowerCase();
+  
+  let pageFound = false;
 
-    for (let i = 0; i < pages.length; i++) {
-      if (this.innerHTML.toLowerCase() === pages[i].dataset.page) {
-        pages[i].classList.add("active");
-        navigationLinks[i].classList.add("active");
-        window.scrollTo(0, 0);
-      } else {
-        pages[i].classList.remove("active");
-        navigationLinks[i].classList.remove("active");
-      }
+  for (let i = 0; i < pages.length; i++) {
+    const pageName = pages[i].dataset.page.toLowerCase();
+    // Match nav link based on href hash or link text
+    const linkHash = navigationLinks[i].getAttribute('href') || '';
+    const linkPageName = linkHash.replace('#', '').toLowerCase();
+    
+    if (pageName === activePageName) {
+      pages[i].classList.add("active");
+      navigationLinks[i].classList.add("active");
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+      pageFound = true;
+    } else {
+      pages[i].classList.remove("active");
+      navigationLinks[i].classList.remove("active");
     }
+  }
 
-  });
-}
+  // Fallback if hash doesn't match any page
+  if (!pageFound && pages.length > 0) {
+    window.location.hash = '#about';
+  }
+};
+
+window.addEventListener('hashchange', navigateToTab);
+window.addEventListener('load', navigateToTab);
