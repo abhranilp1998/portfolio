@@ -1881,3 +1881,31 @@ textarea.form-input::-webkit-resizer { display: none; }
   .timeline-text { max-width: 700px; }
 
 }
+
+/*-----------------------------------*\
+  #SKILL TAGS
+\*-----------------------------------*/
+
+.skills-tags-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 10px 0;
+}
+
+.skill-tag {
+  background: var(--onyx);
+  color: var(--white-2);
+  font-size: var(--fs-7);
+  padding: 6px 14px;
+  border-radius: 8px;
+  border: 1px solid var(--jet);
+  transition: var(--transition-1);
+  cursor: default;
+}
+
+.skill-tag:hover {
+  border-color: var(--orange-yellow-crayola);
+  color: var(--orange-yellow-crayola);
+  box-shadow: 0 0 10px rgba(255, 219, 112, 0.15);
+}
