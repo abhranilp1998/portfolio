@@ -175,8 +175,8 @@
             <a href="#portfolio" class="navbar-link" data-nav-link>Portfolio</a>
           </li>
 
-          <li class="navbar-item">
-            <a href="#blog" class="navbar-link" data-nav-link>Blog</a>
+          <li class="navbar-item" hidden>
+            <a href="#blog" class="navbar-link">Blog</a>
           </li>
 
           <li class="navbar-item">
@@ -871,7 +871,7 @@
             </li>
 
             <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="https://github.com/abhranilp1998" target="_blank">
+              <a href="https://github.com/abhranilp1998/portfolio" target="_blank" rel="noopener">
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
@@ -974,7 +974,7 @@
         - #BLOG
       -->
 
-      <article class="blog" data-page="blog">
+      <article class="blog" hidden>
 
         <header>
           <h2 class="h2 article-title">Blog</h2>
@@ -1172,29 +1172,18 @@
           <h2 class="h2 article-title">Contact</h2>
         </header>
 
-        <section class="mapbox" data-mapbox>
-          <figure>
-            <iframe
-              src="https://www.google.com/maps/embed/v1/place?q=22.45160767069856,+88.38400459858453&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
-              width="400" height="300" loading="lazy"></iframe>
-          </figure>
-
-          <div class="mapbox-overlay" data-mapbox-overlay>
-            <ion-icon name="lock-closed-outline" class="mapbox-overlay-icon"></ion-icon>
-            <h4 class="mapbox-overlay-title">Location Map Hidden</h4>
-            <p class="mapbox-overlay-text">Unlock to view coordinates and explore the interactive map.</p>
-            <button class="mapbox-overlay-btn" data-mapbox-unlock-btn>
-              <ion-icon name="key-outline"></ion-icon>
-              <span>Unlock Map</span>
-            </button>
-          </div>
+        <section class="contact-location">
+          <p class="form-title"><ion-icon name="location-outline" aria-hidden="true"></ion-icon> Based in Kolkata, India</p>
         </section>
 
         <section class="contact-form">
 
           <h3 class="h3 form-title">Contact Form</h3>
 
-          <form action="#" class="form" data-form>
+          <form action="https://formsubmit.co/abhranilpaul00@gmail.com" method="POST" class="form" data-form>
+
+            <input type="hidden" name="_subject" value="New message from portfolio">
+            <input type="text" name="_honey" class="form-honeypot" tabindex="-1" autocomplete="off" aria-hidden="true">
 
             <div class="input-wrapper">
               <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
@@ -1209,55 +1198,13 @@
               <span>Send Message</span>
             </button>
 
+            <p class="form-status" data-form-status role="status" aria-live="polite"></p>
+
           </form>
 
         </section>
 
-        <!--
-          - map unlock modal
-        -->
-        <div class="modal-container" data-map-modal-container>
-          <div class="overlay" data-map-overlay></div>
-
-          <section class="testimonials-modal map-unlock-modal">
-            <button class="modal-close-btn" data-map-modal-close-btn>
-              <ion-icon name="close-outline"></ion-icon>
-            </button>
-
-            <div class="modal-content">
-              <h4 class="h3 modal-title">Unlock Location Map</h4>
-              <p class="modal-subtitle">To view the address map, please enter your contact details. At least one valid field is required.</p>
-              
-              <form class="map-unlock-form" data-map-unlock-form novalidate>
-                <div class="form-group">
-                  <label for="unlock-name" class="form-label">Full Name</label>
-                  <input type="text" id="unlock-name" name="name" class="form-input" placeholder="e.g. John Doe" data-map-input="name">
-                  <div class="error-message" id="name-error-msg">❌ Name must contain only letters and be at least 2 characters.</div>
-                </div>
-
-                <div class="form-group">
-                  <label for="unlock-email" class="form-label">Email Address</label>
-                  <input type="email" id="unlock-email" name="email" class="form-input" placeholder="e.g. john@example.com" data-map-input="email">
-                  <div class="error-message" id="email-error-msg">❌ Please enter a valid email address.</div>
-                </div>
-
-                <div class="form-group">
-                  <label for="unlock-phone" class="form-label">Mobile Number</label>
-                  <input type="tel" id="unlock-phone" name="phone" class="form-input" placeholder="e.g. +91 9876543210" data-map-input="phone">
-                  <div class="error-message" id="phone-error-msg">❌ Mobile number must contain at least 8 digits.</div>
-                </div>
-
-                <div class="form-alert" id="form-general-error">❌ Please fill in at least one valid field to unlock the map.</div>
-
-                <button class="form-btn" type="submit" data-map-submit-btn>
-                  <ion-icon name="lock-open-outline"></ion-icon>
-                  <span>Unlock Map</span>
-                </button>
-              </form>
-            </div>
-          </section>
-        </div>
-
+        
       </article>
 
     </div>
