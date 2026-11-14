@@ -1,112 +1,51 @@
-# Personal Portfolio
+# Abhranil Paul — interactive portfolio
 
-This is a fully responsive personal portfolio website, responsive for all devices, built using HTML, CSS, and JavaScript.
+A static portfolio for recruiters and prospective clients, built with HTML, CSS and browser JavaScript modules. No frontend framework, package installation or build step is required.
 
-## Demo
+## Run locally
 
-The portfolio features a fully responsive layout optimized for all device sizes (mobile, tablet, and desktop).
+Requires Node.js 18 or later:
 
-## Prerequisites
-
-Before you begin, ensure you have met the following requirements:
-
-* [Git](https://git-scm.com/downloads "Download Git") must be installed on your operating system.
-
-## Installing the Portfolio
-
-To install the **Portfolio**, follow these steps:
-
-Linux and macOS:
-
-```bash
-sudo git clone https://github.com/abhranilp1998/portfolio.git
+```sh
+node serve.mjs
 ```
 
-Windows:
+Open http://127.0.0.1:5600/. Set the PORT environment variable to choose another port. The server listens only on loopback and blocks dotfiles. Stop it with Ctrl+C when launched in a terminal.
 
-```bash
-git clone https://github.com/abhranilp1998/portfolio.git
+## Explore
+
+- Home: platform previews, recruiter/client paths, about and experience.
+- Work: six projects with combined platform filters and technology search.
+- Case studies: EDGE, GitCompass, Commute Planner, ICARUS Verse, Spendly and NO LEAN.
+- Contact: hiring, project and general enquiry routes; email drafts and copy alternatives.
+- Archive: the original portfolio preserved at archive/original/index.html, linked through archive.html.
+
+The interface includes persistent dark/light themes, mobile navigation, image zoom, scroll reveals and enter/exit page transitions. Reduced-motion preferences disable the transitions and reveals. External links and modified clicks retain normal browser behavior.
+
+Contact prepares a draft in the visitor's email application. It does not submit to a backend, send email or persist message fields. Only the color theme is saved locally. Google Fonts is optional; system font fallbacks remain available offline.
+
+## Source and status
+
+The overhaul lives on rehaul/interactive-portfolio. Its starting point is origin/main at a74d0fe3beecce8d6192681a09c7b0b80a6105ff. Existing assets and the original portfolio are retained. This local preview has not been pushed or deployed as part of the overhaul.
+
+See [PROJECT_SOURCES.md](PROJECT_SOURCES.md) for source branches, asset provenance and project maturity. Cards distinguish actual screenshots, supplied artwork, brand imagery and typographic covers. No project metrics or client outcomes were invented.
+
+## Validation
+
+```sh
+node --test tests/portfolio.test.mjs
+git diff --check
 ```
 
-## Project Structure & Documentation
+See [VALIDATION.md](VALIDATION.md) for the manual browser checks and their limits. The browser UI uses native modules; preview over HTTP rather than file://.
 
-This section provides a detailed overview of the project structure, the role of each file/folder, and how the elements are used across the project.
+## Layout
 
-### 1. Project Overview
+- assets/rehaul/: styles, interactions, project data and pure utilities.
+- assets/work/: project artwork and source screenshots.
+- work/: individual case-study pages.
+- archive/original/: the preserved pre-overhaul site.
+- serve.mjs: dependency-free local preview server.
+- tests/: focused Node tests.
 
-This is a fully responsive personal portfolio website built with HTML, CSS, and JavaScript. It showcases personal information, projects, blogs, and contact details in a modern, mobile-friendly layout.
-
-### 2. File & Folder Structure
-
-```
-portfolio/
-├── assets/
-│   ├── css/
-│   │   └── style.css         # Main stylesheet for all pages
-│   ├── images/               # All images and icons used in the site
-│   └── js/
-│       └── script.js         # Main JavaScript file for interactivity
-├── index.html                # Main HTML file (entry point)
-├── LICENSE                   # Project license
-└── README.md                 # Project documentation
-```
-
-### 3. Element Usage Map
-
-#### **HTML (index.html)**
-- **Purpose:** Main structure and content of the website.
-- **Elements Used:**
-  - `<header>`, `<nav>`, `<main>`, `<section>`, `<footer>`: Layout structure.
-  - `<img>`: Displays images from `assets/images/`.
-  - `<link rel="stylesheet">`: Links to `assets/css/style.css`.
-  - `<script src="assets/js/script.js">`: Adds interactivity.
-  - Various `<div>`, `<span>`, `<a>`, `<ul>`, `<li>`, `<h1>`-`<h6>`, `<p>`: Content and layout.
-- **Importance:** Central file; all content and references to assets originate here.
-
-#### **CSS (assets/css/style.css)**
-- **Purpose:** Styles the entire website, including layout, colors, fonts, responsiveness, and animations.
-- **Elements Styled:**
-  - All HTML elements in `index.html`.
-  - Custom classes and IDs for sections, buttons, cards, etc.
-  - Responsive design for mobile and desktop.
-- **Importance:** Essential for visual appearance and user experience.
-
-#### **JavaScript (assets/js/script.js)**
-- **Purpose:** Adds interactivity (e.g., menu toggles, animations, form handling).
-- **Elements Used:**
-  - DOM elements selected via classes/IDs defined in `index.html`.
-  - Event listeners for user actions (clicks, scrolls, etc.).
-- **Importance:** Enhances user experience with dynamic features.
-
-#### **Images & Icons (assets/images/)**
-- **Purpose:** Visual content for the site (avatars, project images, icons, logos).
-- **Usage:**
-  - Referenced in `index.html` via `<img>` tags.
-  - Some icons may be used as CSS backgrounds or inline SVGs.
-- **Importance:** Key for branding, portfolio showcase, and visual appeal.
-
-
-### 4. How the Pieces Work Together
-- `index.html` is the entry point, referencing `style.css` for styles and `script.js` for interactivity.
-- All images/icons are loaded from `assets/images/`.
-- The CSS ensures the site is responsive and visually appealing.
-- The JavaScript file adds dynamic behavior (e.g., navigation, animations).
-
-### 5. Customization & Contribution Tips
-- **To change styles:** Edit `assets/css/style.css`.
-- **To update content:** Modify `index.html`.
-- **To add interactivity:** Update `assets/js/script.js`.
-- **To add new images:** Place them in `assets/images/` and reference them in `index.html`.
-- **For documentation:** Update `README.md` if needed.
-
----
-
-For any questions or contributions, please refer to the [Contact](#contact) section above.
-
-## Contact
-
-If you want to contact me you can let me know..
-
-<!-- ## License
-
-MIT -->
+Copyright © 2026 Abhranil Paul. Existing repository license and third-party asset ownership remain applicable.
