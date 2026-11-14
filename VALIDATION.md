@@ -21,3 +21,17 @@
 ## Limits
 
 This is a local functionality and responsive-layout check, not an accessibility certification, broad device matrix, third-party integration audit or production deployment check. Mailto delivery depends on the visitor's email application. External project links and screenshots describe the inspected sources and maturity; the underlying applications were not exhaustively retested here.
+
+## Expanded portfolio — 15 November 2026
+
+- Existing checkpoint confirmed: 5a68abd, clean rehaul/interactive-portfolio branch before edits.
+- All 16 current pages and 370 local references passed HTTP/file/fragment checks.
+- All four focused Node tests passed after imagery and launch-link changes; app.mjs and expansion.mjs passed Node syntax checks.
+- Project platform/search filtering still returns three Flutter mobile projects with external launch links. Spendly image loaded successfully in the mobile work page.
+- The CV includes four career entries and all three education entries, five original skill self-assessments and 19 original tool tags. The text CV is downloadable; PDF uses the browser print dialog and print stylesheet, not a pre-generated certified PDF.
+- A synthetic testimonial was saved locally, survived reload, and was deleted through the UI. No feedback was emailed or published.
+- Map introduction dialog, valid-name unlock, iframe loading and re-lock were exercised. The map uses OpenStreetMap, without the old embedded key. Map gate is a local interaction rather than authentication.
+- Code Scan and Crossfade options previewed in the UI; Code Scan selection persisted while navigating to the CV. Terminal is restored as the handoff default. Reduced-motion handling is present in CSS/JavaScript; system preference was not changed during QA.
+- Mobile CV, Skills, Work and Lab checked at 390px with no horizontal overflow. Shared mobile menu navigation exercised. Additional desktop and default-size visual checks were performed.
+- Spendly is a source-rendered dashboard image using test sample data. The app renderer surfaced a two-pixel overflow in the underlying app; no claim is made that that app's layout tests pass. It was not modified or pushed as part of this portfolio task.
+- No deployment or remote push was performed. Third-party release pages can be empty if a project has not published binaries.

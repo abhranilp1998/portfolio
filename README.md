@@ -22,7 +22,7 @@ Open http://127.0.0.1:5600/. Set the PORT environment variable to choose another
 
 The interface includes persistent dark/light themes, mobile navigation, image zoom, scroll reveals and enter/exit page transitions. Reduced-motion preferences disable the transitions and reveals. External links and modified clicks retain normal browser behavior.
 
-Contact prepares a draft in the visitor's email application. It does not submit to a backend, send email or persist message fields. Only the color theme is saved locally. Google Fonts is optional; system font fallbacks remain available offline.
+Contact prepares a draft in the visitor's email application. It does not submit to a backend, send email or persist message fields. Theme and motion preferences, plus optional testimonial drafts, are saved locally. Google Fonts is optional; system font fallbacks remain available offline.
 
 ## Source and status
 
@@ -49,3 +49,13 @@ See [VALIDATION.md](VALIDATION.md) for the manual browser checks and their limit
 - tests/: focused Node tests.
 
 Copyright © 2026 Abhranil Paul. Existing repository license and third-party asset ownership remain applicable.
+
+## Expanded portfolio — 15 November 2026
+
+The original checkpoint is 5a68abd. New pages: about.html (full source biography), skills.html (five original self-assessments and 19 tools), cv.html (exact career dates and all education, text download and print/PDF styles), testimonials.html (four original quotes plus a local draft submission POC), notes.html (original article previews), lab.html (Terminal, Code Scan and Crossfade transitions).
+
+Project covers and names launch the hosted site or GitHub releases page. Source code and case studies have separate actions. A releases page is not a claim that a binary exists. GitHub and Facebook handles come from the original portfolio; missing social handles are visibly labelled placeholders.
+
+The contact map loads OpenStreetMap only after an explicit local introduction gate. It is a visual interaction, not access control. Gate fields are discarded. Testimonial drafts stay in this browser, can be deleted/copied, and can be prepared as an email; there is no public submission backend. Original testimonials are retained as supplied.
+
+The initial panel curtains have been replaced by a configurable developer-style transition system. Preferences respect reduced motion. Typography reuses the original Plus Jakarta Sans, Inter and Fira Code families.

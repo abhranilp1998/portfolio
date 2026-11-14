@@ -1,0 +1,40 @@
+Abhranil Paul | Software Developer
+Rajpur Sonarpur, Kolkata, India
+abhranilpaul00@gmail.com | +91 8583966535
+https://github.com/abhranilp1998
+
+PROFILE
+I'm a Software Engineer at Coral Servsoft Pvt. Ltd., specializing in backend systems, database engineering, mobile app development (Flutter) using Dart, .NET MAUI, and build automation. With a strong focus on enterprise solutions, I work extensively with VB.NET, C#, T-SQL, Java, Flutter, and Dart to build high-performance applications and clean, interactive dashboards. From refactoring complex ERP logic to configuring robust Gradle build systems, I enjoy solving tricky technical bugs and optimization challenges. When I'm not coding, I'm usually researching PC hardware components, managing my smart home setup, or diving into some immersive gaming.
+
+EXPERIENCE
+Software Developer at Coral Servsoft Pvt. Ltd. | 08/2024 — Present
+Maintain and enhance core ERP modules using VB.NET, C#, and SQL Server. Build custom mobile applications using Flutter and design analytics dashboards. Optimize stored procedures, triggers, and Crystal Reports.
+
+Career Break — Self-Learning & Upskilling | 11/2022 — 07/2024
+Focused on self-study and upskilling in modern technologies, including cross-platform mobile development with Flutter/Dart, database tuning, Windows services development, Powershell scripting, and version control (Git).
+
+Customer Support Associate at Tech Mahindra | 07/2022 — 11/2022
+Provided backend support and handled customer inquiries for Flipkart, ensuring system and transaction accuracy.
+
+Systems Engineer at Infosys Ltd | 01/2021 — 10/2021
+Worked as a Systems Engineer trainee (focusing on Systemd and system infrastructure), gaining hands-on programming experience, setting up Linux configurations, and learning software architecture.
+
+EDUCATION
+B.Tech in Computer Science & Engineering | 2016 — 2020
+Neotia Institute of Technology Management & Science
+Acquired solid foundations in software engineering, database management systems, data structures, and object-oriented programming.
+
+Higher Secondary (Science) | 2014 — 2016
+India International School, Asansol
+Specialized in Science stream (Physics, Chemistry, Mathematics, Biology, NOT Computer Science).
+
+Secondary Education | Completed 2014
+St. Patrick's Higher Secondary School, Asansol
+Completed general secondary education with a strong focus on science and mathematics fundamentals.
+
+TOOLS
+Flutter, Dart, C#, VB.NET, MS SQL Server, T-SQL, Java, JavaScript (ES6), Kotlin, HTML5 & CSS3, Gradle, Windows Services, PowerShell (pwsh), Task Scheduler, Crystal Reports, Git, Systemd & Servers, Python, Android Studio
+
+PROJECTS
+EDGE, GitCompass, Commute Planner, ICARUS Verse, Spendly, NO LEAN.
+Project details and maturity: work.html in the portfolio.

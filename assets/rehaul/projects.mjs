@@ -33,7 +33,9 @@ export const projects = [
       ]
     ],
     "limit": "The inspected branch is 9112-deviant/full-website at 914522b. Production authentication and callable-function deployment remain release gates in the project documentation. This is a prelaunch alpha, not a claim of production readiness.",
-    "source": "https://github.com/edge911-deviant/edge-gig-marketplace/blob/9112-deviant/full-website/docs/DEV_FOCUS_STATUS.md"
+    "source": "https://github.com/edge911-deviant/edge-gig-marketplace/blob/9112-deviant/full-website/docs/DEV_FOCUS_STATUS.md",
+    "launch": "https://edge-gig-marketplace.web.app/",
+    "launchLabel": "Open live website"
   },
   {
     "id": "gitcompass",
@@ -68,7 +70,9 @@ export const projects = [
       ]
     ],
     "limit": "An internal portable package exists, but it is unsigned. Some current source improvements are newer than the packaged 0.1.1 release. Platform compatibility and a representative beginner pilot remain release gates.",
-    "source": "https://github.com/abhranilp1998/GitCompass/blob/main/README.md"
+    "source": "https://github.com/abhranilp1998/GitCompass/blob/main/README.md",
+    "launch": "https://github.com/abhranilp1998/GitCompass/releases",
+    "launchLabel": "View app releases"
   },
   {
     "id": "commute",
@@ -104,7 +108,9 @@ export const projects = [
       ]
     ],
     "limit": "Without a configured Maps key, routes are explicitly example data. Android background notifications and browser capabilities differ. The repository’s demo is not a promise of live transit coverage.",
-    "source": "https://github.com/abhranilp1998/kal-route/blob/main/README.md"
+    "source": "https://github.com/abhranilp1998/kal-route/blob/main/README.md",
+    "launch": "https://abhranilp1998.github.io/kal-route/",
+    "launchLabel": "Open live website"
   },
   {
     "id": "icarus",
@@ -140,7 +146,9 @@ export const projects = [
       ]
     ],
     "limit": "SoundCloud availability and service access are external dependencies. Contact uses the visitor’s email app. Earlier pages remain accessible through a dedicated archive.",
-    "source": "https://github.com/abhranilp1998/Element/blob/codex/icarus-redesign/ARTIST_SOURCES.md"
+    "source": "https://github.com/abhranilp1998/Element/blob/codex/icarus-redesign/ARTIST_SOURCES.md",
+    "launch": "https://abhranilp1998.github.io/Element/",
+    "launchLabel": "Open live website"
   },
   {
     "id": "spendly",
@@ -171,9 +179,13 @@ export const projects = [
         "Sample INR data stays in memory. The work demonstrates interface behavior, not a production financial service."
       ]
     ],
-    "limit": "This is an in-memory Flutter starter with sample data and no backend. The typographic cover here is a portfolio presentation, not a screenshot of the application.",
+    "limit": "This is an in-memory Flutter starter with sample data and no backend. The dashboard image was rendered from its Flutter source in a test environment. The releases page is separate from the source repository; it may not yet contain a downloadable build.",
     "source": "https://github.com/abhranilp1998/expense_tracker/blob/main/README.md",
-    "repo": "https://github.com/abhranilp1998/expense_tracker"
+    "repo": "https://github.com/abhranilp1998/expense_tracker",
+    "launch": "https://github.com/abhranilp1998/expense_tracker/releases",
+    "launchLabel": "View app releases",
+    "image": "assets/work/spendly.png",
+    "imageLabel": "Actual Spendly dashboard rendered from Flutter source with sample data"
   },
   {
     "id": "nolean",
@@ -204,8 +216,12 @@ export const projects = [
         "Android app-lock and geofence integrations include emergency exit behavior and protected exclusions."
       ]
     ],
-    "limit": "This is a technical product case study, not a claim of medical effectiveness or a statement about anyone’s health. Native Android permissions and production validation require separate review.",
+    "limit": "An offline-first Android MVP. This image shows the project’s actual Android widget preview resource. Native permissions and production validation require separate review; no medical effectiveness is claimed.",
     "source": "https://github.com/abhranilp1998/no-lean-system/blob/main/README.md",
-    "repo": "https://github.com/abhranilp1998/no-lean-system"
+    "repo": "https://github.com/abhranilp1998/no-lean-system",
+    "launch": "https://github.com/abhranilp1998/no-lean-system/releases",
+    "launchLabel": "View app releases",
+    "image": "assets/work/nolean.png",
+    "imageLabel": "Original Android full-widget preview from the NO LEAN repository"
   }
 ];

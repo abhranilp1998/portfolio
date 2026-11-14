@@ -58,3 +58,11 @@ Employment, education and existing interests come from the original portfolio. T
 ## Selection and scope
 
 Reviewed the user's repository inventory and selected work spanning web, desktop, mobile, backend boundaries and interaction design. Empty/tutorial repositories, duplicates and projects with insufficient inspectable evidence were not promoted. Existing featured work remains available in the original archive. Repositories were read for research; no referenced project was modified or deployed.
+
+## Asset and original-data update — 15 November 2026
+
+- Spendly now has a genuine Flutter dashboard render (assets/work/spendly.png), generated from the inspected repository with sample data, Roboto and MaterialIcons loaded in the test renderer. The temporary capture harness starts directly at the dashboard. The source renderer reported an existing two-pixel layout overflow; this is an image capture, not a claim that the underlying app passes all layout tests. No app source changes were pushed.
+- NO LEAN now uses android/app/src/main/res/drawable-nodpi/no_lean_full_widget_preview.png from its repository, copied to assets/work/nolean.png. It is labelled as a widget preview, not a full application screenshot.
+- Other visuals retain their source labels: GitCompass and Commute are screenshots, EDGE uses repository brand photography, ICARUS uses the supplied illustration.
+- Full biography, five self-assessment percentages, 19 technology tags, four testimonials, full education and month-specific career dates were recovered from archive/original/index.html. Existing testimonial avatar illustrations remain illustrations. The public GitHub/Facebook handles and phone were carried over; missing social URLs were not guessed. Original client-logo placeholders were not presented as real clients.
+- Original blog titles and summaries return as explicitly labelled previews, with no invented article bodies.
