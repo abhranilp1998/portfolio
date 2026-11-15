@@ -45,3 +45,16 @@ This is a local functionality and responsive-layout check, not an accessibility 
 - Show contacts expanded to the original email, phone, city and birthday. Clients page has six labelled placeholders.
 - Mobile home/blog navigation checked at 390px without horizontal overflow; desktop layout and both color themes inspected. Uppercase AP branding and SVG favicon confirmed in markup.
 - Browser print/PDF and real backend authentication/storage remain outside these local UI checks.
+
+## Three independent worlds and contact refinement
+
+- Corrected scope follows the latest explicit clarification: keep navigation and add a separate Get into my world chooser for the three UIs.
+- 24 current pages and 740 local references passed local HTTP/file/fragment checks.
+- Six Node tests pass, including reduced-motion disclosure behavior and rapid reverse/cancel handling.
+- Terminal projects command showed all six projects. Unknown commands produced explanatory text; no shell command is executed.
+- Quiet Engineer's résumé showed seven career/education entries and the existing CV download.
+- Desktop project minimize/restore, terminal close/restore and navigation recovery of a minimized workspace were exercised.
+- All three worlds checked at 390px and 320px without horizontal overflow or broken sourced images. Mobile Animation Lab shortcut opened the preserved lab; all three transition controls remained present.
+- Main navigation remained intact at desktop width, including the additional world button and visible lab link. Contact rapid reversals finished open with synchronized labels; normal collapse was observed animating before closing.
+- Concept references and post-fix screenshots were reviewed together; see design-qa.md for intentional deviations and remaining P3 polish.
+- No push, deployment or change to the production portfolio was made.

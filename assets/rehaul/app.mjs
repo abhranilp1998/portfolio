@@ -30,3 +30,5 @@ import './writing.mjs';
 if(grid){const requested=new URLSearchParams(location.search).get('platform');if(['Web','Mobile','Desktop'].includes(requested)){filter=requested;updateProjects();}}
 
 const routeCaption=document.querySelector('.route-path');if(routeCaption)routeCaption.textContent='/ '+(location.pathname.split('/').pop()?.replace('.html','')||'index');
+
+import './world.mjs';

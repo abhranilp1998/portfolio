@@ -12,6 +12,7 @@
 <script>try{document.documentElement.dataset.motion=localStorage.getItem('ap-motion')||'terminal'}catch{document.documentElement.dataset.motion='terminal'}</script>
 <link rel="stylesheet" href="assets/rehaul/expansion.css">
 <link rel="stylesheet" href="assets/rehaul/developer.css">
+<link rel="stylesheet" href="assets/rehaul/world.css">
 <script type="module" src="assets/rehaul/app.mjs">
 </script>
 <link rel="apple-touch-icon" href="assets/rehaul/mark.svg?v=3"></head>
@@ -35,7 +36,7 @@
 <a href="skills.html">Skills</a>
 <a href="cv.html">Résumé</a>
 <a href="blog.html">Blog</a>
-<details class="more-menu">
+<a class="visible-lab-link" href="lab.html">Animation Lab</a><details class="more-menu">
 <summary>Explore +</summary>
 <div>
 <a href="clients.html">Clients</a>
@@ -44,9 +45,9 @@
 <a href="archive.html">Original archive</a>
 </div>
 </details>
-<a class="nav-contact" href="contact.html">Let’s talk ↗</a>
+<a class="world-entry" href="world.html">Get into my world ↗</a><a class="nav-contact" href="contact.html">Let’s talk ↗</a>
 </nav>
-<div class="header-tools">
+<div class="header-tools"><a class="header-mobile-lab" href="lab.html" aria-label="Animation Lab">Lab</a>
 <button id="theme-toggle" class="theme-toggle" aria-label="Switch color theme" aria-pressed="false">◐</button>
 <button id="menu-toggle" aria-controls="nav" aria-expanded="false">Menu <span>+</span>
 </button>
@@ -145,5 +146,6 @@
 <p>
 </p>
 </dialog>
+
 </body>
 </html>

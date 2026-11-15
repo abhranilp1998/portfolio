@@ -1,0 +1,97 @@
+{
+  "education": [
+    {
+      "title": "B.Tech in Computer Science & Engineering",
+      "date": "2016 — 2020",
+      "paragraphs": [
+        "Neotia Institute of Technology Management & Science",
+        "Acquired solid foundations in software engineering, database management systems, data structures, and object-oriented programming."
+      ]
+    },
+    {
+      "title": "Higher Secondary (Science)",
+      "date": "2014 — 2016",
+      "paragraphs": [
+        "India International School, Asansol",
+        "Specialized in Science stream (Physics, Chemistry, Mathematics, Biology, NOT Computer Science)."
+      ]
+    },
+    {
+      "title": "Secondary Education",
+      "date": "Completed 2014",
+      "paragraphs": [
+        "St. Patrick's Higher Secondary School, Asansol",
+        "Completed general secondary education with a strong focus on science and mathematics fundamentals."
+      ]
+    }
+  ],
+  "experience": [
+    {
+      "title": "Software Developer at Coral Servsoft Pvt. Ltd.",
+      "date": "08/2024 — Present",
+      "paragraphs": [
+        "Maintain and enhance core ERP modules using VB.NET, C#, and SQL Server. Build custom mobile applications using Flutter and design analytics dashboards. Optimize stored procedures, triggers, and Crystal Reports."
+      ]
+    },
+    {
+      "title": "Career Break — Self-Learning & Upskilling",
+      "date": "11/2022 — 07/2024",
+      "paragraphs": [
+        "Focused on self-study and upskilling in modern technologies, including cross-platform mobile development with Flutter/Dart, database tuning, Windows services development, Powershell scripting, and version control (Git)."
+      ]
+    },
+    {
+      "title": "Customer Support Associate at Tech Mahindra",
+      "date": "07/2022 — 11/2022",
+      "paragraphs": [
+        "Provided backend support and handled customer inquiries for Flipkart, ensuring system and transaction accuracy."
+      ]
+    },
+    {
+      "title": "Systems Engineer at Infosys Ltd",
+      "date": "01/2021 — 10/2021",
+      "paragraphs": [
+        "Worked as a Systems Engineer trainee (focusing on Systemd and system infrastructure), gaining hands-on programming experience, setting up Linux configurations, and learning software architecture."
+      ]
+    }
+  ],
+  "quotes": [
+    {
+      "name": "Prem Chand Kankaria",
+      "quote": "Abhranil refactored our core ERP transaction engines, which significantly optimized query execution times and improved database reliability. He is highly detail-oriented and very skilled at T-SQL."
+    },
+    {
+      "name": "Suman Raut",
+      "quote": "Abhranil designed and built our customer-facing mobile applications from scratch using Flutter. The app performance and user experience have been exceptional. Highly recommended."
+    },
+    {
+      "name": "Anisha Roy",
+      "quote": "Collaborating with Abhranil on system architecture upgrades is always a great experience. His PowerShell scripts and Windows services automations saved our team dozens of hours."
+    },
+    {
+      "name": "Sumon Das",
+      "quote": "We hired Coral Servsoft to optimize our business reporting engine, and Abhranil did an outstanding job refactoring our Crystal Reports and stored procedures. Excellent support throughout."
+    }
+  ],
+  "tools": [
+    "Flutter",
+    "Dart",
+    "C#",
+    "VB.NET",
+    "MS SQL Server",
+    "T-SQL",
+    "Java",
+    "JavaScript (ES6)",
+    "Kotlin",
+    "HTML5 & CSS3",
+    "Gradle",
+    "Windows Services",
+    "PowerShell (pwsh)",
+    "Task Scheduler",
+    "Crystal Reports",
+    "Git",
+    "Systemd & Servers",
+    "Python",
+    "Android Studio"
+  ]
+}

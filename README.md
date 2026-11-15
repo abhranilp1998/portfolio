@@ -67,3 +67,17 @@ The latest design uses IBM Plex Sans, IBM Plex Sans Condensed and IBM Plex Mono 
 Clients has six explicit placeholders; no template logos are passed off as real clients. Blog is a searchable collection of planned topics from the original portfolio, reading from assets/content/posts.json. The writing studio supports a local draft, reload, clear, preview and JSON export. It never publishes. Content configuration can switch between static data and a future API. backend/README.md and backend/schema.sql define the intended posts/testimonials/clients model and authentication/moderation boundaries.
 
 Current development preview: http://127.0.0.1:5601/ (PORT=5601). The older port 5600 process was left untouched when ownership was unclear. serve.mjs defaults to 5600 when PORT is unset.
+
+## Get into my world
+
+A separate button is added alongside the existing navigation. It opens world.html, a chooser for three independent, interactive interpretations of this same portfolio:
+
+- worlds/terminal.html — Terminal Workspace, file tabs, optional portfolio commands and a blinking cursor.
+- worlds/quiet.html — Quiet Engineer, a minimalist professional document.
+- worlds/desktop.html — Desktop Workbench, tactile windows and working minimize/restore/expand controls.
+
+All three share the existing six-project data and original profile facts. Resume content includes all four career and three education entries. They link back to the main portfolio, the chooser and Animation Lab. Commands route to portfolio sections only; they do not execute shell commands. The main portfolio's navigation is retained.
+
+Animation Lab has a direct desktop navigation link, a compact mobile header shortcut and a home-page shortcut. Contact details now animate in both directions with interruption/reversal handling, accessible Show/Hide labels and immediate behavior under reduced motion. Native details remains the fallback without JavaScript.
+
+Run regression checks with: node --test tests/portfolio.test.mjs tests/world.test.mjs. The source/implementation comparison and limitations are recorded in design-qa.md. Generated media and icon provenance are in WORLD-SOURCES.md.
