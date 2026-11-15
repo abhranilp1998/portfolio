@@ -1,0 +1,202 @@
+{
+  "sourceCommit": "a74d0fe3beecce8d6192681a09c7b0b80a6105ff",
+  "archiveBranch": "archive/portfolio-before-rehaul-2026-11-15",
+  "description": "Complete original tracked project, preserved before the portfolio overhaul.",
+  "files": [
+    {
+      "mode": "100644",
+      "blob": "c22508100ee99b24d04fe456e69a019ef8f5628a",
+      "file": ".vscode/settings.json"
+    },
+    {
+      "mode": "100644",
+      "blob": "326e8e4d65883f75fdf3ec82c992b15587b16824",
+      "file": "LICENSE"
+    },
+    {
+      "mode": "100644",
+      "blob": "a63d844847e6586db36c22e509094bc9e2f43129",
+      "file": "README.md"
+    },
+    {
+      "mode": "100644",
+      "blob": "ccafb2ec31f524b0660a0755fa81f49c9de255e6",
+      "file": "assets/css/style.css"
+    },
+    {
+      "mode": "100644",
+      "blob": "def748f38473217bd87438ac6b13ad70e96b7196",
+      "file": "assets/images/avatar-1.png"
+    },
+    {
+      "mode": "100644",
+      "blob": "8168cedb02b22094e5c14f6daf42a6184015dbad",
+      "file": "assets/images/avatar-2.png"
+    },
+    {
+      "mode": "100644",
+      "blob": "d58301378b67e3c1f764e73a418da36adbc42bea",
+      "file": "assets/images/avatar-3.png"
+    },
+    {
+      "mode": "100644",
+      "blob": "63532f5eb35e4ec3e2be5d74443b8d824f02c2f5",
+      "file": "assets/images/avatar-4.png"
+    },
+    {
+      "mode": "100644",
+      "blob": "027d2c8b02c591b8778dacb5cc9cecd026bad104",
+      "file": "assets/images/blog-1.png"
+    },
+    {
+      "mode": "100644",
+      "blob": "e6ad3aa3e4b3c82577c400b9a2202dfdb571d245",
+      "file": "assets/images/blog-2.png"
+    },
+    {
+      "mode": "100644",
+      "blob": "9530b14444d62c2e8e054a9502e6e14c767e7307",
+      "file": "assets/images/blog-3.png"
+    },
+    {
+      "mode": "100644",
+      "blob": "774de947f2b3bce89daf9ffce852ad1714c86055",
+      "file": "assets/images/blog-4.png"
+    },
+    {
+      "mode": "100644",
+      "blob": "118c6da3a70f419cad045f42da5bd78c5467bd8c",
+      "file": "assets/images/blog-5.png"
+    },
+    {
+      "mode": "100644",
+      "blob": "aae9d937412fe2bb888e3ba142cedcc130417052",
+      "file": "assets/images/blog-6.png"
+    },
+    {
+      "mode": "100644",
+      "blob": "5654e9d985ac6278a8fd1a8cbbcb4ce331abbaeb",
+      "file": "assets/images/icon-app.svg"
+    },
+    {
+      "mode": "100644",
+      "blob": "1eedc2fab978d261fece59980a5babe2ddfbfef4",
+      "file": "assets/images/icon-design.svg"
+    },
+    {
+      "mode": "100644",
+      "blob": "bf61a2b6d1d3907c815bc63cdbe1e8ae608f8129",
+      "file": "assets/images/icon-dev.svg"
+    },
+    {
+      "mode": "100644",
+      "blob": "86ce321ea9b2c183f8a2d632f3ce562f2bcbd363",
+      "file": "assets/images/icon-photo.svg"
+    },
+    {
+      "mode": "100644",
+      "blob": "b751853837064d62218a9eab855d0565fe9bdb7a",
+      "file": "assets/images/icon-quote.svg"
+    },
+    {
+      "mode": "100644",
+      "blob": "a6d1b5f5c92202e72212b59f543420e4385d2367",
+      "file": "assets/images/logo-1-color.png"
+    },
+    {
+      "mode": "100644",
+      "blob": "ee447ac7dadb97096f1ae3c7a084466f1a365ea3",
+      "file": "assets/images/logo-2-color.png"
+    },
+    {
+      "mode": "100644",
+      "blob": "498c22ef129656c1fec6c41238704edd2649c520",
+      "file": "assets/images/logo-3-color.png"
+    },
+    {
+      "mode": "100644",
+      "blob": "acaf2a32b750724e8255dad258d6cd13a5eba79f",
+      "file": "assets/images/logo-4-color.png"
+    },
+    {
+      "mode": "100644",
+      "blob": "1be429577dfcd0d9caeab559bc034e665b9903fb",
+      "file": "assets/images/logo-5-color.png"
+    },
+    {
+      "mode": "100644",
+      "blob": "d1a0ca5a3f5118d3c02bc6c76cd4af4cbbd4eb29",
+      "file": "assets/images/logo-6-color.png"
+    },
+    {
+      "mode": "100644",
+      "blob": "ea997011abb9ec9af119dcfdd3c71da3949a9e43",
+      "file": "assets/images/logo.ico"
+    },
+    {
+      "mode": "100644",
+      "blob": "bd5b7defa3d901216855934ecfe82107ba47278c",
+      "file": "assets/images/logo.svg"
+    },
+    {
+      "mode": "100644",
+      "blob": "e60a7d73aac41661424dc37a2b2f8daf35863f55",
+      "file": "assets/images/my-avatar.png"
+    },
+    {
+      "mode": "100644",
+      "blob": "e4406ed2d9d2eaa462390aa2a757d6445cb2596e",
+      "file": "assets/images/project-1.jpg"
+    },
+    {
+      "mode": "100644",
+      "blob": "d34ecf8476f0d19caceb43476f4d9b68dbdaec1c",
+      "file": "assets/images/project-2.png"
+    },
+    {
+      "mode": "100644",
+      "blob": "f6744346613951f1663bfa1407a8a76967102462",
+      "file": "assets/images/project-3.jpg"
+    },
+    {
+      "mode": "100644",
+      "blob": "de077108d3cc9ddc109c768422ca150401b434b5",
+      "file": "assets/images/project-4.png"
+    },
+    {
+      "mode": "100644",
+      "blob": "7d8d5ab645f3b02f238d19a18679482945b4c73a",
+      "file": "assets/images/project-5.png"
+    },
+    {
+      "mode": "100644",
+      "blob": "b9d8c9f9c7a6d11bd84375931dee464ecf906696",
+      "file": "assets/images/project-6.png"
+    },
+    {
+      "mode": "100644",
+      "blob": "088083fc442fd375bb114a9e0e52d5cb4284c0d5",
+      "file": "assets/images/project-7.png"
+    },
+    {
+      "mode": "100644",
+      "blob": "21dff059cbc6b2812bb40dd453758154cf1a4267",
+      "file": "assets/images/project-8.jpg"
+    },
+    {
+      "mode": "100644",
+      "blob": "86b624cb7ec37fd56a7fb61e7da4436c8193f3e4",
+      "file": "assets/images/project-9.png"
+    },
+    {
+      "mode": "100644",
+      "blob": "144fbdec35cbae6d8dd6db966515195a5077398a",
+      "file": "assets/js/script.js"
+    },
+    {
+      "mode": "100644",
+      "blob": "4d40a21dfc84c30017a0947ce0d46c314e1a9d19",
+      "file": "index.html"
+    }
+  ]
+}

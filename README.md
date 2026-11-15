@@ -81,3 +81,9 @@ All three share the existing six-project data and original profile facts. Resume
 Animation Lab has a direct desktop navigation link, a compact mobile header shortcut and a home-page shortcut. Contact details now animate in both directions with interruption/reversal handling, accessible Show/Hide labels and immediate behavior under reduced motion. Native details remains the fallback without JavaScript.
 
 Run regression checks with: node --test tests/portfolio.test.mjs tests/world.test.mjs. The source/implementation comparison and limitations are recorded in design-qa.md. Generated media and icon provenance are in WORLD-SOURCES.md.
+
+## Where I started
+
+The “Where I started” link opens archive/original/index.html directly. That folder now contains all 39 tracked files from the original project at a74d0fe3beecce8d6192681a09c7b0b80a6105ff, plus an archive manifest. The same complete Git history is retained through the preservation branch archive/portfolio-before-rehaul-2026-11-15. Existing project folders were not deleted.
+
+Publishing target: https://abhranilp1998.github.io/portfolio/ (GitHub Pages). All worlds remain static; the writing studio is local-only and the real publishing backend remains disconnected.
