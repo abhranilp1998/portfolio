@@ -3,41 +3,43 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#111510">
+<meta name="theme-color" content="#2453d4">
 <meta name="description" content="Abhranil Paul — software developer in Kolkata. Explore web, mobile and desktop projects, engineering decisions, and ways to work together.">
-<title>Engineering notes — Abhranil Paul</title>
-<link rel="icon" href="assets/rehaul/mark.svg" type="image/svg+xml">
+<title>Blog (formerly Notes — Abhranil Paul</title>
+<link rel="icon" href="assets/rehaul/mark.svg?v=3" type="image/svg+xml">
 <link rel="stylesheet" href="assets/rehaul/site.css">
-<script>try{const t=localStorage.getItem('ap-theme');if(t==='light'||t==='dark')document.documentElement.dataset.theme=t}catch{}</script>
+<script>try{const t=localStorage.getItem('ap-developer-theme');document.documentElement.dataset.theme=t==='dark'?'dark':'light'}catch{}</script>
 <script>try{document.documentElement.dataset.motion=localStorage.getItem('ap-motion')||'terminal'}catch{document.documentElement.dataset.motion='terminal'}</script>
 <link rel="stylesheet" href="assets/rehaul/expansion.css">
+<link rel="stylesheet" href="assets/rehaul/developer.css">
 <script type="module" src="assets/rehaul/app.mjs">
 </script>
-</head>
+<link rel="apple-touch-icon" href="assets/rehaul/mark.svg?v=3"></head>
 <body>
 <div class="curtain" aria-hidden="true">
 <div class="route-console">
 <span>abhranil@portfolio:~</span>
 <b>&gt; route.resolve()</b>
-<span class="route-path">/ notes</span>
+<span class="route-path">/ index</span>
 <i>_</i>
 </div>
 </div>
 <a class="skip" href="#main">Skip to content</a>
 <header class="header">
-<a class="wordmark" href="index.html" aria-label="Abhranil Paul home">ap<span>↗</span>
+<a class="wordmark" href="index.html" aria-label="Abhranil Paul home">AP<span>_</span>
 </a>
 <nav aria-label="Main navigation" id="nav">
 <a href="work.html">Work <sup>06</sup>
 </a>
 <a href="about.html">About</a>
 <a href="skills.html">Skills</a>
-<a href="cv.html">CV</a>
+<a href="cv.html">Résumé</a>
+<a href="blog.html">Blog</a>
 <details class="more-menu">
 <summary>Explore +</summary>
 <div>
+<a href="clients.html">Clients</a>
 <a href="testimonials.html">Testimonials</a>
-<a href="notes.html" aria-current="page">Notes</a>
 <a href="lab.html">Interaction lab</a>
 <a href="archive.html">Original archive</a>
 </div>
@@ -50,63 +52,8 @@
 </button>
 </div>
 </header>
-<main id="main">
-<section class="page-intro wrap">
-<p class="eyebrow">NOTES / THINGS I THINK ABOUT</p>
-<h1>The engineering<br>
-<span>notebook.</span>
-</h1>
-<p>Topics from my original portfolio. These are article previews; full write-ups are still to come.</p>
-</section>
-<section class="wrap content-section">
-<div class="notes-grid">
-<article>
-<img src="assets/images/blog-1.png" alt="" loading="lazy">
-<p class="eyebrow">PREVIEW / 01</p>
-<h2>Optimizing T-SQL Queries: Tips from a Database Engineer</h2>
-<p>A deep dive into query plans, indexing strategies, and writing high-performance SQL scripts.</p>
-<a class="underlink" href="contact.html?reason=hello">Ask me about this topic ↗</a>
-</article>
-<article>
-<img src="assets/images/blog-2.png" alt="" loading="lazy">
-<p class="eyebrow">PREVIEW / 02</p>
-<h2>Accelerating Flutter Pipelines: The Power of Gradle Caching</h2>
-<p>How to resolve Gradle cache corruption issues and speed up continuous integration builds.</p>
-<a class="underlink" href="contact.html?reason=hello">Ask me about this topic ↗</a>
-</article>
-<article>
-<img src="assets/images/blog-3.png" alt="" loading="lazy">
-<p class="eyebrow">PREVIEW / 03</p>
-<h2>Migrating Legacy VB.NET Enterprise Systems to Modern .NET C# API Architectures</h2>
-<p>Strategies for refactoring legacy desktop modules into scalable and maintainable microservices.</p>
-<a class="underlink" href="contact.html?reason=hello">Ask me about this topic ↗</a>
-</article>
-<article>
-<img src="assets/images/blog-4.png" alt="" loading="lazy">
-<p class="eyebrow">PREVIEW / 04</p>
-<h2>Automating Windows Operations with PowerShell (pwsh) and Task Scheduler</h2>
-<p>Leveraging scripting to automate database backups, service health monitoring, and system alerts.</p>
-<a class="underlink" href="contact.html?reason=hello">Ask me about this topic ↗</a>
-</article>
-<article>
-<img src="assets/images/blog-5.png" alt="" loading="lazy">
-<p class="eyebrow">PREVIEW / 05</p>
-<h2>Git Best Practices for Collaborative Enterprise Development</h2>
-<p>Key strategies for branching models, staging clean commits, and resolving code integration merges.</p>
-<a class="underlink" href="contact.html?reason=hello">Ask me about this topic ↗</a>
-</article>
-<article>
-<img src="assets/images/blog-6.png" alt="" loading="lazy">
-<p class="eyebrow">PREVIEW / 06</p>
-<h2>Building High-Performance Single-Page Architectures with Vanilla JS</h2>
-<p>Custom client-side routing, modular structures, and hardware-accelerated interface state transitions.</p>
-<a class="underlink" href="contact.html?reason=hello">Ask me about this topic ↗</a>
-</article>
-</div>
-</section>
-</main>
-<footer class="footer">
-<a class="wordmark" href="index.html">ap<span>↗</span>
+<section class="identity-strip wrap" aria-label="Profile and contacts"><a href="about.html"><img src="assets/images/my-avatar.png" alt=""><span><b>Abhranil Paul</b><small>Software Developer · Kolkata</small></span></a><details class="profile-contacts"><summary>Show contacts +</summary><div class="contact-facts"><a href="mailto:abhranilpaul00@gmail.com"><small>EMAIL</small>abhranilpaul00@gmail.com ↗</a><a href="tel:+918583966535"><small>PHONE</small>+91 8583966535 ↗</a><span><small>BASED IN</small>Rajpur Sonarpur, Kolkata, India</span><span><small>BIRTHDAY</small>11 April 1998</span></div></details></section><main id="main"><section class="page-intro wrap"><p class="eyebrow">BLOG / ENGINEERING NOTES</p><h1>Thinking out loud.</h1><p>Databases, backend systems, cross-platform development, and the practical lessons in between.</p></section><section class="wrap content-section"><div class="blog-heading"><h2>Latest writing</h2><span class="content-badge">Coming soon</span></div><p class="reading" id="blog-status" role="status">Loading the notebook…</p><div class="blog-controls"><label>Find a topic<input id="blog-search" type="search" placeholder="SQL, Flutter, Git…"></label><label>Category<select id="blog-category"><option value="all">All topics</option><option>Database</option><option>Build automation</option><option>Architecture</option><option>Automation</option><option>Git</option><option>Web development</option></select></label></div><p id="blog-count" role="status"></p><div class="notes-grid" id="blog-posts"></div><p id="blog-empty" hidden>No matching topics. Try another search.</p></section><section class="wrap content-section blog-bottom"><h2>A notebook in progress.</h2><p class="reading">These are the subjects I plan to write about. New posts will appear here when they’re ready.</p><a class="underlink" href="contact.html?reason=hello">Suggest a topic ↗</a><a class="underlink" href="studio.html">Writing studio preview ↗</a></section></main><footer class="footer">
+<a class="wordmark" href="index.html">AP<span>_</span>
 </a>
 <p>Software, systems, and a little curiosity.</p>
 <div>

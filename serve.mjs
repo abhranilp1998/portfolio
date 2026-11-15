@@ -9,6 +9,12 @@ const types = { '.html': 'text/html; charset=utf-8', '.jpg': 'image/jpeg', '.png
 
 http.createServer(async (request, response) => {
   try {
+    const apiPath = new URL(request.url, 'http://localhost').pathname;
+    if (apiPath.startsWith('/api/')) {
+      const payload = request.method === 'GET' && apiPath === '/api/posts' ? { posts: [], mode: 'placeholder', publishingEnabled: false } : { error: 'backend_not_configured', message: 'Publishing backend is not connected.' };
+      response.writeHead(request.method === 'GET' && apiPath === '/api/posts' ? 200 : 501, { 'Content-Type': 'application/json', 'Cache-Control': 'no-store' }).end(JSON.stringify(payload));
+      return;
+    }
     const pathname = decodeURIComponent(new URL(request.url, 'http://localhost').pathname).replaceAll('\\', '/');
     const segments = pathname.split('/');
     if (segments.some(segment => segment.startsWith('.'))) {

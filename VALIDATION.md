@@ -35,3 +35,13 @@ This is a local functionality and responsive-layout check, not an accessibility 
 - Mobile CV, Skills, Work and Lab checked at 390px with no horizontal overflow. Shared mobile menu navigation exercised. Additional desktop and default-size visual checks were performed.
 - Spendly is a source-rendered dashboard image using test sample data. The app renderer surfaced a two-pixel overflow in the underlying app; no claim is made that that app's layout tests pass. It was not modified or pushed as part of this portfolio task.
 - No deployment or remote push was performed. Third-party release pages can be empty if a project has not published binaries.
+
+## Developer identity revision
+
+- 20 current pages and all local asset/link/fragment references checked against the updated port 5601 preview.
+- GET /api/posts returns an explicit empty placeholder response with publishingEnabled:false. POST /api/posts returns 501 backend_not_configured. No real publishing backend is connected.
+- Original data and archive retained; four existing focused Node tests pass.
+- New blog search reduced six topics to one for SQL; local writing draft saved, survived reload, and cleared through the UI. Plain-text preview uses textContent. No post was published or emailed.
+- Show contacts expanded to the original email, phone, city and birthday. Clients page has six labelled placeholders.
+- Mobile home/blog navigation checked at 390px without horizontal overflow; desktop layout and both color themes inspected. Uppercase AP branding and SVG favicon confirmed in markup.
+- Browser print/PDF and real backend authentication/storage remain outside these local UI checks.

@@ -59,3 +59,11 @@ Project covers and names launch the hosted site or GitHub releases page. Source 
 The contact map loads OpenStreetMap only after an explicit local introduction gate. It is a visual interaction, not access control. Gate fields are discarded. Testimonial drafts stay in this browser, can be deleted/copied, and can be prepared as an email; there is no public submission backend. Original testimonials are retained as supplied.
 
 The initial panel curtains have been replaced by a configurable developer-style transition system. Preferences respect reduced motion. Typography reuses the original Plus Jakarta Sans, Inter and Fira Code families.
+
+## Personal developer identity
+
+The latest design uses IBM Plex Sans, IBM Plex Sans Condensed and IBM Plex Mono with a light blue/slate default and a matching dark theme. The homepage is profile-first, with original avatar, expandable contacts, biography, professional focus, real project interfaces and testimonial previews. Uppercase AP branding and an original vector AP/cursor favicon replace the earlier arrow mark.
+
+Clients has six explicit placeholders; no template logos are passed off as real clients. Blog is a searchable collection of planned topics from the original portfolio, reading from assets/content/posts.json. The writing studio supports a local draft, reload, clear, preview and JSON export. It never publishes. Content configuration can switch between static data and a future API. backend/README.md and backend/schema.sql define the intended posts/testimonials/clients model and authentication/moderation boundaries.
+
+Current development preview: http://127.0.0.1:5601/ (PORT=5601). The older port 5600 process was left untouched when ownership was unclear. serve.mjs defaults to 5600 when PORT is unset.

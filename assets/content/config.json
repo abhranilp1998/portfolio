@@ -1,0 +1,6 @@
+{
+  "mode": "static",
+  "postsUrl": "assets/content/posts.json",
+  "apiBase": "/api",
+  "publishingEnabled": false
+}

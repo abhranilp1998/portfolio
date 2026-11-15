@@ -1,0 +1,54 @@
+{
+  "version": 1,
+  "posts": [],
+  "planned": [
+    {
+      "id": "planned-1",
+      "title": "Optimizing T-SQL Queries: Tips from a Database Engineer",
+      "excerpt": "A deep dive into query plans, indexing strategies, and writing high-performance SQL scripts.",
+      "cover": "assets/images/blog-1.png",
+      "category": "Database",
+      "status": "planned"
+    },
+    {
+      "id": "planned-2",
+      "title": "Accelerating Flutter Pipelines: The Power of Gradle Caching",
+      "excerpt": "How to resolve Gradle cache corruption issues and speed up continuous integration builds.",
+      "cover": "assets/images/blog-2.png",
+      "category": "Build automation",
+      "status": "planned"
+    },
+    {
+      "id": "planned-3",
+      "title": "Migrating Legacy VB.NET Enterprise Systems to Modern .NET C# API Architectures",
+      "excerpt": "Strategies for refactoring legacy desktop modules into scalable and maintainable microservices.",
+      "cover": "assets/images/blog-3.png",
+      "category": "Architecture",
+      "status": "planned"
+    },
+    {
+      "id": "planned-4",
+      "title": "Automating Windows Operations with PowerShell (pwsh) and Task Scheduler",
+      "excerpt": "Leveraging scripting to automate database backups, service health monitoring, and system alerts.",
+      "cover": "assets/images/blog-4.png",
+      "category": "Automation",
+      "status": "planned"
+    },
+    {
+      "id": "planned-5",
+      "title": "Git Best Practices for Collaborative Enterprise Development",
+      "excerpt": "Key strategies for branching models, staging clean commits, and resolving code integration merges.",
+      "cover": "assets/images/blog-5.png",
+      "category": "Git",
+      "status": "planned"
+    },
+    {
+      "id": "planned-6",
+      "title": "Building High-Performance Single-Page Architectures with Vanilla JS",
+      "excerpt": "Custom client-side routing, modular structures, and hardware-accelerated interface state transitions.",
+      "cover": "assets/images/blog-6.png",
+      "category": "Web development",
+      "status": "planned"
+    }
+  ]
+}

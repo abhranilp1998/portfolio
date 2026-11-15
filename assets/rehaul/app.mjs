@@ -5,7 +5,7 @@ const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
 const reduced=matchMedia('(prefers-reduced-motion: reduce)'),root=document.documentElement;
 const theme=$('#theme-toggle');
 function syncTheme(){theme?.setAttribute('aria-pressed',String(root.dataset.theme==='light'));theme?.setAttribute('aria-label',root.dataset.theme==='light'?'Switch to dark theme':'Switch to light theme');}
-theme?.addEventListener('click',()=>{root.dataset.theme=root.dataset.theme==='light'?'dark':'light';try{localStorage.setItem('ap-theme',root.dataset.theme)}catch{}syncTheme();});syncTheme();
+theme?.addEventListener('click',()=>{root.dataset.theme=root.dataset.theme==='light'?'dark':'light';try{localStorage.setItem('ap-developer-theme',root.dataset.theme)}catch{}syncTheme();});syncTheme();
 const menu=$('#menu-toggle'),nav=$('#nav');function closeMenu(focus=false){nav?.classList.remove('open');menu?.setAttribute('aria-expanded','false');if(focus)menu?.focus();}
 menu?.addEventListener('click',()=>{const open=nav.classList.toggle('open');menu.setAttribute('aria-expanded',String(open));});
 document.addEventListener('click',event=>{if(!event.target.closest('.header'))closeMenu();});
@@ -24,3 +24,9 @@ const viewer=$('#image-viewer');$$('[data-zoom]').forEach(button=>button.addEven
 const form=$('#enquiry-form');if(form){const descriptions={hiring:'Role or organisation',project:'Project or organisation',hello:'A little context'};function reason(value){if(!descriptions[value])value='project';form.elements.reason.value=value;$('#context-title').textContent=descriptions[value]+' (optional)';$('#draft-status').textContent='';}reason(new URLSearchParams(location.search).get('reason'));form.addEventListener('change',e=>{if(e.target.name==='reason')reason(e.target.value);});function draft(){return composeDraft(Object.fromEntries(new FormData(form)));}form.addEventListener('submit',e=>{e.preventDefault();if(!form.reportValidity())return;location.href=draft().url;$('#draft-status').textContent='Email draft requested. Review and send it in your email app. If it did not open, use Copy message.';});$('#copy-draft').addEventListener('click',async()=>{if(!form.reportValidity())return;const d=draft();try{await navigator.clipboard.writeText('Subject: '+d.subject+'\n\n'+d.body);$('#draft-status').textContent='Message copied. Paste it into your email app when you’re ready.';}catch{$('#draft-status').textContent='Clipboard access is unavailable. Copy your message from the form.';}});$('#copy-email').addEventListener('click',async()=>{try{await navigator.clipboard.writeText('abhranilpaul00@gmail.com');$('#copy-status').textContent='Email address copied.';}catch{$('#copy-status').textContent='Select the email address above to copy it.';}});}
 // Reveal progressively. Content remains readable if observers or motion are unavailable.
 if('IntersectionObserver'in window&&!reduced.matches){const observer=new IntersectionObserver(entries=>{entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('revealed');observer.unobserve(entry.target);}});},{threshold:.08});$$('.project-card,.timeline article,.case-decisions article').forEach(el=>{if(el.getBoundingClientRect().top>innerHeight){el.classList.add('will-reveal');observer.observe(el);}});}
+
+import './writing.mjs';
+
+if(grid){const requested=new URLSearchParams(location.search).get('platform');if(['Web','Mobile','Desktop'].includes(requested)){filter=requested;updateProjects();}}
+
+const routeCaption=document.querySelector('.route-path');if(routeCaption)routeCaption.textContent='/ '+(location.pathname.split('/').pop()?.replace('.html','')||'index');
