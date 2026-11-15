@@ -26,7 +26,7 @@ Contact prepares a draft in the visitor's email application. It does not submit 
 
 ## Source and status
 
-The overhaul lives on rehaul/interactive-portfolio. Its starting point is origin/main at a74d0fe3beecce8d6192681a09c7b0b80a6105ff. Existing assets and the original portfolio are retained. This local preview has not been pushed or deployed as part of the overhaul.
+The overhaul lives on rehaul/interactive-portfolio. Its starting point is origin/main at a74d0fe3beecce8d6192681a09c7b0b80a6105ff. Existing assets and the original portfolio are retained. GitHub Pages publishes the main branch at https://abhranilp1998.github.io/portfolio/. The development branch is retained separately, and the original project is preserved in archive/portfolio-before-rehaul-2026-11-15.
 
 See [PROJECT_SOURCES.md](PROJECT_SOURCES.md) for source branches, asset provenance and project maturity. Cards distinguish actual screenshots, supplied artwork, brand imagery and typographic covers. No project metrics or client outcomes were invented.
 
